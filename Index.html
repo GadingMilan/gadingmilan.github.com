@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Pesan Menu</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Form Data Master</h1>
+        <form class="dataForm">
+            <label for="kode">Kode Produk</label>
+            <input type="text" name="kode" id="kode" value="MD-1" disabled>
+
+            <label for="produk">Nama Produk</label>
+            <input type="text" name="produk" id="produk" placeholder="Masukkan Nama Makanan/Minuman" required>
+
+            <label for="harga">Harga Produk</label>
+            <input type="number" name="harga" id="harga" placeholder="Masukkan Harga" required>
+
+            <label for="satuan">Satuan</label>
+            <select name="satuan" id="satuan">
+                <option value="Satuan">Satuan</option>
+                <option value="pcs">pcs</option>
+            </select>
+
+            <label for="kategori">Kategori</label>
+            <select name="kategori" id="kategori">
+                <option value="makanan">Makanan</option> 
+                <option value="minuman dingin">Minuman Dingin</option>
+                <option value="minuman hangat">Minuman Hangat</option>
+            </select>
+
+            <label for="gambar">URL Gambar</label>
+            <input type="url" name="gambar " id="gambar" placeholder="Masukkan URL Gambar" required>
+
+            <label for="stok">Stok Awal</label>
+            <input type="number" name="stok" id="stok" placeholder="Masukkan Stok" required>
+
+            <button type="button" onclick="saveForm()">Tambah</button>
+        </form>
+
+        <section>
+            <table id="prodactTable">
+                <thead>
+                    <tr> 
+                        <th>No</th>
+                        <th>Kode Produk</th>
+                        <th>Nama Produk</th>
+                        <th>Harga Produk</th>
+                        <th>Satuan</th>
+                        <th>Kategori</th>
+                        <th>Gambar Produk</th>
+                        <th>Stok Awal</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffffb1;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[name="kode"] {
+    display: block;
+    margin-bottom: 5px;
+    background-color: #c2c2c2;
+}
+input[name="harga"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="text"],
+ select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[name="stok"] {
+    width: 25%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: darkgreen;
+}
+table, th, td {
+    border:  1px solid rgb(92, 92, 228);
+    border-collapse: collapse;
+    padding: 8px;
+    margin: 12px;
+}
+tr, th, td {
+   text-align: center;
+   align-content: center;
+}
+tr, th, td {
+    border: 1px solid white;
+}
+.low-stock {
+    background-color: red;
+    color: white;
+}
+.delete {
+    background-color: red;
+    color: white;
+}
+.delete:hover {
+    background-color: darkred;
+}
